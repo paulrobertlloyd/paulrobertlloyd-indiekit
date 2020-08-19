@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "name": "paulrobertlloyd-indiekit",
+  "version": "1.0.0",
+  "description": "Indiekit server for my personal website",
+  "keywords": [
+    "indiekit",
+    "indieweb"
+  ],
+  "author": {
+    "name": "Paul Robert Lloyd",
+    "url": "https://paulrobertlloyd.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulrobertlloyd/paulrobertlloyd-indiekit.git"
+  },
+  "homepage": "https://indiekit.paulrobertlloyd.com",
+  "main": "index.js",
+  "dependencies": {
+    "@indiekit/indiekit": "0.1.0-alpha.1",
+    "@indiekit/store-github": "0.1.0-alpha.1",
+    "dotenv": "^8.2.0"
+  }
+}
