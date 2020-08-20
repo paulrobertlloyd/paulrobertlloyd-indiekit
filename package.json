@@ -17,8 +17,12 @@
   },
   "homepage": "https://indiekit.paulrobertlloyd.com",
   "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
-    "@indiekit/indiekit": "0.1.0-alpha.1",
+    "@indiekit/indiekit": "0.1.0-alpha.2",
     "@indiekit/store-github": "0.1.0-alpha.1",
     "dotenv": "^8.2.0"
   }
