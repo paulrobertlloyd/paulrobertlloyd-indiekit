@@ -25,7 +25,8 @@ const publicationConfig = {
       url: '{yyyy}/{MM}/{slug}/'
     },
     media: {
-      path: 'src/images/{yyyy}/{MM}/{filename}'
+      path: 'src/images/{yyyy}/{MM}/{filename}',
+      url: 'images/{yyyy}/{MM}/{filename}'
     }
   }, {
     type: 'note',
@@ -42,7 +43,8 @@ const publicationConfig = {
       url: 'photos/{t}/'
     },
     media: {
-      path: 'src/images/photos/{t}.{ext}'
+      path: 'src/images/photos/{t}.{ext}',
+      url: 'images/photos/{t}.{ext}'
     }
   }, {
     type: 'bookmark',
