@@ -97,6 +97,7 @@ indiekit.set('application.locale', 'en-GB');
 // Publication settings
 indiekit.set('publication.config', publicationConfig);
 indiekit.set('publication.me', 'https://paulrobertlloyd.com');
+indiekit.set('publication.slugSeparator', '_');
 indiekit.set('publication.storeId', 'github');
 
 // Server
