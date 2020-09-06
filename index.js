@@ -99,6 +99,7 @@ indiekit.set('publication.preset', jekyll);
 indiekit.set('publication.slugSeparator', '_');
 indiekit.set('publication.store', github);
 indiekit.set('publication.syndicationTargets', syndicationTargets);
+indiekit.set('publication.timeZone', 'Europe/London');
 
 // Server
 const server = indiekit.server();
