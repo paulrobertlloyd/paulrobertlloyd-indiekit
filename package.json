@@ -22,8 +22,8 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "@indiekit/indiekit": "0.1.0-alpha.3",
-    "@indiekit/store-github": "0.1.0-alpha.3",
+    "@indiekit/indiekit": "0.1.0-alpha.5",
+    "@indiekit/store-github": "0.1.0-alpha.5",
     "dotenv": "^8.2.0"
   }
 }
