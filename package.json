@@ -19,7 +19,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "DEBUG=indiekit:* node index.js"
   },
   "dependencies": {
     "@indiekit/indiekit": "0.1.0-alpha.6",
