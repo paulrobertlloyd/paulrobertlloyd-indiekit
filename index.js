@@ -1,4 +1,5 @@
 import 'dotenv/config.js';
+import {upperFirst} from 'lodash.upperfirst';
 import {Indiekit} from '@indiekit/indiekit';
 import {JekyllPreset} from '@indiekit/preset-jekyll';
 import {GithubStore} from '@indiekit/store-github';
@@ -76,6 +77,11 @@ const postTypes = [{
   }
 }];
 
+const storeMessageTemplate = metaData => {
+  const {result, postType, fileType} = metaData;
+  return `${upperFirst(result)} a ${postType} ${fileType}`;
+}
+
 const syndicationTargets =  [{
   uid: 'https://twitter.com/paulrobertlloyd/',
   name: '@paulrobertlloyd on Twitter'
@@ -89,15 +95,16 @@ const syndicationTargets =  [{
 
 // Application settings
 indiekit.set('application.mongodbUrl', process.env.MONGODB_URL)
-indiekit.set('application.locale', 'en-GB');
 
 // Publication settings
 indiekit.set('publication.categories', 'https://paulrobertlloyd.com/categories/index.json');
+indiekit.set('publication.locale', 'en-GB');
 indiekit.set('publication.me', 'https://paulrobertlloyd.com');
 indiekit.set('publication.postTypes', postTypes);
 indiekit.set('publication.preset', jekyll);
 indiekit.set('publication.slugSeparator', '_');
 indiekit.set('publication.store', github);
+indiekit.set('publication.storeMessageTemplate', storeMessageTemplate);
 indiekit.set('publication.syndicationTargets', syndicationTargets);
 indiekit.set('publication.timeZone', 'Europe/London');
 
