@@ -6,3 +6,4 @@
 
 # Folders to ignore
 node_modules
+package-lock.json
