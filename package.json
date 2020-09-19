@@ -16,6 +16,9 @@
     "url": "git+https://github.com/paulrobertlloyd/paulrobertlloyd-indiekit.git"
   },
   "homepage": "https://indiekit.paulrobertlloyd.com",
+  "engines": {
+    "node": "14.x"
+  },
   "main": "index.js",
   "type": "module",
   "scripts": {
