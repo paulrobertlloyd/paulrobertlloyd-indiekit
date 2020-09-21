@@ -1,10 +1,8 @@
 import 'dotenv/config.js';
-import upperfirst from 'lodash.upperfirst';
+import _ from 'lodash';
 import {Indiekit} from '@indiekit/indiekit';
 import {JekyllPreset} from '@indiekit/preset-jekyll';
 import {GithubStore} from '@indiekit/store-github';
-
-const {upperFirst} = upperfirst;
 
 // New indiekit instance
 const indiekit = new Indiekit();
@@ -81,7 +79,7 @@ const postTypes = [{
 
 const storeMessageTemplate = metaData => {
   const {result, postType, fileType} = metaData;
-  return `${upperFirst(result)} a ${postType} ${fileType}`;
+  return `${_.upperFirst(result)} a ${postType} ${fileType}`;
 };
 
 const syndicationTargets =  [{
