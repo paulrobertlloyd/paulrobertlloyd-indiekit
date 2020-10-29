@@ -3,6 +3,7 @@ import _ from 'lodash';
 import {Indiekit} from '@indiekit/indiekit';
 import {JekyllPreset} from '@indiekit/preset-jekyll';
 import {GithubStore} from '@indiekit/store-github';
+import {InternetArchiveSyndicator} from '@indiekit/syndicator-internet-archive';
 
 // New indiekit instance
 const indiekit = new Indiekit();
@@ -16,6 +17,12 @@ const github = new GithubStore({
   repo: 'paulrobertlloyd-v4',
   branch: 'main',
   token: process.env.GITHUB_TOKEN
+});
+
+// Configure Internet Archive syndicator
+const internetArchive = new InternetArchiveSyndicator({
+  accessKey: process.env.ARCHIVE_ACCESS_KEY,
+  secret: process.env.ARCHIVE_SECRET
 });
 
 const postTypes = [{
@@ -82,17 +89,6 @@ const storeMessageTemplate = metaData => {
   return `${_.upperFirst(result)} a ${postType} ${fileType}`;
 };
 
-const syndicationTargets =  [{
-  uid: 'https://twitter.com/paulrobertlloyd/',
-  name: '@paulrobertlloyd on Twitter'
-}, {
-  uid: 'https://mastodon.social/@paulrobertlloyd',
-  name: '@paulrobertlloyd on Mastodon'
-}, {
-  uid: 'https://micro.blog/paulrobertlloyd',
-  name: '@paulrobertlloyd on Micro.blog'
-}];
-
 // Application settings
 indiekit.set('application.mongodbUrl', process.env.MONGODB_URL)
 
@@ -105,7 +101,7 @@ indiekit.set('publication.preset', jekyll);
 indiekit.set('publication.slugSeparator', '_');
 indiekit.set('publication.store', github);
 indiekit.set('publication.storeMessageTemplate', storeMessageTemplate);
-indiekit.set('publication.syndicationTargets', syndicationTargets);
+indiekit.set('publication.syndicationTargets', [internetArchive]);
 indiekit.set('publication.timeZone', 'Europe/London');
 
 // Server
