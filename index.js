@@ -22,7 +22,9 @@ const github = new GithubStore({
 // Configure Internet Archive syndicator
 const internetArchive = new InternetArchiveSyndicator({
   accessKey: process.env.ARCHIVE_ACCESS_KEY,
-  secret: process.env.ARCHIVE_SECRET
+  secret: process.env.ARCHIVE_SECRET,
+  checked: true,
+  force: true
 });
 
 const postTypes = [{
