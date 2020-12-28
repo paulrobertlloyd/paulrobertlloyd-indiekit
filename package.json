@@ -25,9 +25,10 @@
     "start": "DEBUG=* node index.js"
   },
   "dependencies": {
-    "@indiekit/indiekit": "0.1.0-alpha.14",
-    "@indiekit/store-github": "0.1.0-alpha.14",
-    "@indiekit/syndicator-internet-archive": "0.1.0-alpha.14",
+    "@indiekit/indiekit": "0.1.0-alpha.15",
+    "@indiekit/store-github": "0.1.0-alpha.15",
+    "@indiekit/syndicator-internet-archive": "0.1.0-alpha.15",
+    "@indiekit/syndicator-twitter": "0.1.0-alpha.15",
     "dotenv": "^8.2.0",
     "lodash": "^4.3.1"
   }

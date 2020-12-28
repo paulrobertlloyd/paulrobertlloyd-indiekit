@@ -4,6 +4,7 @@ import {Indiekit} from '@indiekit/indiekit';
 import {JekyllPreset} from '@indiekit/preset-jekyll';
 import {GithubStore} from '@indiekit/store-github';
 import {InternetArchiveSyndicator} from '@indiekit/syndicator-internet-archive';
+import {TwitterSyndicator} from '@indiekit/syndicator-twitter';
 
 // New indiekit instance
 const indiekit = new Indiekit();
@@ -21,10 +22,21 @@ const github = new GithubStore({
 
 // Configure Internet Archive syndicator
 const internetArchive = new InternetArchiveSyndicator({
-  accessKey: process.env.ARCHIVE_ACCESS_KEY,
-  secret: process.env.ARCHIVE_SECRET,
   checked: true,
-  force: true
+  force: true,
+  accessKey: process.env.ARCHIVE_ACCESS_KEY,
+  secret: process.env.ARCHIVE_SECRET
+});
+
+// Configure Twitter syndicator
+const twitter = new TwitterSyndicator({
+  checked: true,
+  force: true,
+  user: 'paulrobertlloyd',
+  apiKey: process.env.TWITTER_API_KEY,
+  apiKeySecret: process.env.TWITTER_API_KEY_SECRET,
+  accessToken: process.env.TWITTER_ACCESS_TOKEN,
+  accessTokenSecret: process.env.TWITTER_ACCESS_TOKEN_SECRET,
 });
 
 const postTypes = [{
@@ -103,7 +115,10 @@ indiekit.set('publication.preset', jekyll);
 indiekit.set('publication.slugSeparator', '_');
 indiekit.set('publication.store', github);
 indiekit.set('publication.storeMessageTemplate', storeMessageTemplate);
-indiekit.set('publication.syndicationTargets', [internetArchive]);
+indiekit.set('publication.syndicationTargets', [
+  internetArchive,
+  twitter
+]);
 indiekit.set('publication.timeZone', 'Europe/London');
 
 // Server
