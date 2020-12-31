@@ -23,7 +23,6 @@ const github = new GithubStore({
 // Configure Internet Archive syndicator
 const internetArchive = new InternetArchiveSyndicator({
   checked: true,
-  force: true,
   accessKey: process.env.ARCHIVE_ACCESS_KEY,
   secret: process.env.ARCHIVE_SECRET
 });
@@ -31,7 +30,6 @@ const internetArchive = new InternetArchiveSyndicator({
 // Configure Twitter syndicator
 const twitter = new TwitterSyndicator({
   checked: true,
-  force: true,
   user: 'paulrobertlloyd',
   apiKey: process.env.TWITTER_API_KEY,
   apiKeySecret: process.env.TWITTER_API_KEY_SECRET,
@@ -108,6 +106,7 @@ indiekit.set('application.mongodbUrl', process.env.MONGODB_URL)
 
 // Publication settings
 indiekit.set('publication.categories', 'https://paulrobertlloyd.com/categories/index.json');
+indiekit.set('publication.jsonFeed', 'https://paulrobertlloyd.com/feed.json');
 indiekit.set('publication.locale', 'en-GB');
 indiekit.set('publication.me', 'https://paulrobertlloyd.com');
 indiekit.set('publication.postTypes', postTypes);
