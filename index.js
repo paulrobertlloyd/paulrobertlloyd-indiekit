@@ -108,7 +108,7 @@ indiekit.set('application.mongodbUrl', process.env.MONGODB_URL)
 
 // Publication settings
 indiekit.set('publication.categories', 'https://paulrobertlloyd.com/categories/index.json');
-indiekit.set('publication.jsonFeed', 'https://paulrobertlloyd.com/feed.json');
+indiekit.set('publication.jf2Feed', 'https://paulrobertlloyd.com/feed.jf2');
 indiekit.set('publication.locale', 'en-GB');
 indiekit.set('publication.me', 'https://paulrobertlloyd.com');
 indiekit.set('publication.postTypes', postTypes);
