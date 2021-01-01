@@ -23,6 +23,7 @@ const github = new GithubStore({
 // Configure Internet Archive syndicator
 const internetArchive = new InternetArchiveSyndicator({
   checked: true,
+  forced: true,
   accessKey: process.env.ARCHIVE_ACCESS_KEY,
   secret: process.env.ARCHIVE_SECRET
 });
@@ -30,6 +31,7 @@ const internetArchive = new InternetArchiveSyndicator({
 // Configure Twitter syndicator
 const twitter = new TwitterSyndicator({
   checked: true,
+  forced: true,
   user: 'paulrobertlloyd',
   apiKey: process.env.TWITTER_API_KEY,
   apiKeySecret: process.env.TWITTER_API_KEY_SECRET,
