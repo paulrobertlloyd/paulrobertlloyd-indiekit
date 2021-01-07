@@ -25,7 +25,7 @@
     "start": "DEBUG=* node index.js"
   },
   "dependencies": {
-    "@indiekit/indiekit": "0.1.0-alpha.19",
+    "@indiekit/indiekit": "0.1.0-alpha.20",
     "@indiekit/store-github": "0.1.0-alpha.15",
     "@indiekit/syndicator-internet-archive": "0.1.0-alpha.15",
     "@indiekit/syndicator-twitter": "0.1.0-alpha.16",
