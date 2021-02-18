@@ -117,7 +117,10 @@ indiekit.set('publication.slugSeparator', '_');
 indiekit.set('publication.store', github);
 indiekit.set('publication.storeMessageTemplate', storeMessageTemplate);
 indiekit.set('publication.syndicationTargets', [
-  internetArchive,
+  // TODO: Re-enable saving to IA when can syndicate without timing out
+  // See: https://github.com/getindiekit/indiekit/issues/324
+  //
+  // internetArchive,
   twitter
 ]);
 indiekit.set('publication.timeZone', 'Europe/London');
