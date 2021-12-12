@@ -43,57 +43,43 @@ const postTypes = [{
   type: 'article',
   name: 'Article',
   post: {
-    path: 'src/content/articles/{yyyy}-{MM}-{dd}-{slug}.md',
+    path: 'src/articles/{yyyy}/{MM}/{slug}/index.md',
     url: '{yyyy}/{MM}/{slug}/'
   },
   media: {
-    path: 'src/images/{yyyy}/{MM}/{filename}',
-    url: 'images/{yyyy}/{MM}/{filename}'
+    path: 'src/articles/{yyyy}/{MM}/{slug}/{filename}',
+    url: '{yyyy}/{MM}/{slug}/{filename}'
   }
 }, {
   type: 'note',
   name: 'Note',
   post: {
-    path: 'src/content/notes/{t}.md',
+    path: 'src/notes/{t}.md',
     url: 'notes/{t}/'
   }
 }, {
   type: 'photo',
   name: 'Photo',
   post: {
-    path: 'src/content/photos/{t}.md',
+    path: 'src/photos/{t}.md',
     url: 'photos/{t}/'
   },
   media: {
-    path: 'src/images/photos/{t}.{ext}',
-    url: 'images/photos/{t}.{ext}'
+    path: 'src/media/{t}.{ext}',
+    url: 'media/{t}.{ext}'
   }
 }, {
   type: 'bookmark',
   name: 'Bookmark',
   post: {
-    path: 'src/content/bookmarks/{yyyy}-{MM}-{dd}-{slug}.md',
+    path: 'src/bookmarks/{yyyy}-{MM}-{dd}-{slug}.md',
     url: 'bookmarks/{yyyy}/{MM}/{slug}/'
-  }
-}, {
-  type: 'event',
-  name: 'Event',
-  post: {
-    path: 'src/content/events/{yyyy}-{MM}-{dd}-{slug}.md',
-    url: 'events/{yyyy}/{MM}/{slug}/'
-  }
-}, {
-  type: 'rsvp',
-  name: 'Reply with RSVP',
-  post: {
-    path: 'src/content/replies/{t}.md',
-    url: 'replies/{t}/'
   }
 }, {
   type: 'reply',
   name: 'Reply',
   post: {
-    path: 'src/content/replies/{t}.md',
+    path: 'src/replies/{t}.md',
     url: 'replies/{t}/'
   }
 }];
