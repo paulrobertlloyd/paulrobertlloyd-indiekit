@@ -1,4 +1,3 @@
-import 'dotenv/config.js';
 import _ from 'lodash';
 import {Indiekit} from '@indiekit/indiekit';
 import {JekyllPreset} from '@indiekit/preset-jekyll';
@@ -9,7 +8,7 @@ import {TwitterSyndicator} from '@indiekit/syndicator-twitter';
 // New indiekit instance
 const indiekit = new Indiekit();
 
-// Configire publication preset
+// Configure publication preset
 const jekyll = new JekyllPreset();
 
 // Configure content store
@@ -94,7 +93,6 @@ indiekit.set('application.mongodbUrl', process.env.MONGODB_URL)
 
 // Publication settings
 indiekit.set('publication.categories', 'https://paulrobertlloyd.com/categories/index.json');
-indiekit.set('publication.jf2Feed', 'https://paulrobertlloyd.com/feed.jf2');
 indiekit.set('publication.locale', 'en-GB');
 indiekit.set('publication.me', 'https://paulrobertlloyd.com');
 indiekit.set('publication.postTypes', postTypes);

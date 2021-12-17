@@ -17,7 +17,7 @@
   },
   "homepage": "https://indiekit.paulrobertlloyd.com",
   "engines": {
-    "node": "14.x"
+    "node": "16.x"
   },
   "main": "index.js",
   "type": "module",
@@ -29,7 +29,6 @@
     "@indiekit/store-github": "^0.1.0",
     "@indiekit/syndicator-internet-archive": "^0.1.0",
     "@indiekit/syndicator-twitter": "^0.1.0",
-    "dotenv": "^10.0.0",
     "lodash": "^4.3.1"
   }
 }
