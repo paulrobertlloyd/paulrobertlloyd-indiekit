@@ -28,6 +28,7 @@
     "@indiekit/indiekit": "^0.3.0",
     "@indiekit/store-github": "^0.3.0",
     "@indiekit/syndicator-internet-archive": "^0.3.0",
+    "@indiekit/syndicator-mastodon": "^0.3.0",
     "@indiekit/syndicator-twitter": "^0.3.0",
     "lodash": "^4.3.1"
   }

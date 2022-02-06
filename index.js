@@ -3,6 +3,7 @@ import {Indiekit} from '@indiekit/indiekit';
 import {JekyllPreset} from '@indiekit/preset-jekyll';
 import {GithubStore} from '@indiekit/store-github';
 import {InternetArchiveSyndicator} from '@indiekit/syndicator-internet-archive';
+import {MastodonSyndicator} from '@indiekit/syndicator-mastodon';
 import {TwitterSyndicator} from '@indiekit/syndicator-twitter';
 
 // New indiekit instance
@@ -22,6 +23,14 @@ const github = new GithubStore({
 const internetArchive = new InternetArchiveSyndicator({
   checked: true,
   forced: true
+});
+
+// Configure Mastodon syndicator
+const mastodon = new MastodonSyndicator({
+  checked: true,
+  forced: true,
+  url: 'https://mastodon.social',
+  user: 'paulrobertlloyd'
 });
 
 // Configure Twitter syndicator
@@ -95,6 +104,7 @@ indiekit.set('publication.syndicationTargets', [
   // See: https://github.com/getindiekit/indiekit/issues/324
   //
   // internetArchive,
+  mastodon,
   twitter
 ]);
 indiekit.set('publication.timeZone', 'Europe/London');
