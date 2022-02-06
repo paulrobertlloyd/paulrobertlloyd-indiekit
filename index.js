@@ -15,27 +15,20 @@ const jekyll = new JekyllPreset();
 const github = new GithubStore({
   user: 'paulrobertlloyd',
   repo: 'paulrobertlloyd-v4',
-  branch: 'main',
-  token: process.env.GITHUB_TOKEN
+  branch: 'main'
 });
 
 // Configure Internet Archive syndicator
 const internetArchive = new InternetArchiveSyndicator({
   checked: true,
-  forced: true,
-  accessKey: process.env.ARCHIVE_ACCESS_KEY,
-  secret: process.env.ARCHIVE_SECRET
+  forced: true
 });
 
 // Configure Twitter syndicator
 const twitter = new TwitterSyndicator({
   checked: true,
   forced: true,
-  user: 'paulrobertlloyd',
-  apiKey: process.env.TWITTER_API_KEY,
-  apiKeySecret: process.env.TWITTER_API_KEY_SECRET,
-  accessToken: process.env.TWITTER_ACCESS_TOKEN,
-  accessTokenSecret: process.env.TWITTER_ACCESS_TOKEN_SECRET,
+  user: 'paulrobertlloyd'
 });
 
 const postTypes = [{
@@ -87,9 +80,6 @@ const storeMessageTemplate = metaData => {
   const {result, postType, fileType} = metaData;
   return `${_.upperFirst(result)} a ${postType} ${fileType}`;
 };
-
-// Application settings
-indiekit.set('application.mongodbUrl', process.env.MONGODB_URL)
 
 // Publication settings
 indiekit.set('publication.categories', 'https://paulrobertlloyd.com/categories/index.json');
