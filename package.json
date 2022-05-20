@@ -17,19 +17,16 @@
   },
   "homepage": "https://indiekit.paulrobertlloyd.com",
   "engines": {
-    "node": "16.x"
+    "node": ">=16"
   },
-  "main": "index.js",
-  "type": "module",
+  "main": "index.config.js",
   "scripts": {
-    "start": "DEBUG=* node index.js"
+    "start": "indiekit serve"
   },
   "dependencies": {
-    "@indiekit/indiekit": "^0.3.0",
-    "@indiekit/store-github": "^0.3.0",
-    "@indiekit/syndicator-internet-archive": "^0.3.0",
-    "@indiekit/syndicator-mastodon": "^0.3.0",
-    "@indiekit/syndicator-twitter": "^0.3.0",
-    "lodash": "^4.3.1"
+    "@indiekit/indiekit": "^1.0.0-alpha.3",
+    "@indiekit/store-github": "^1.0.0-alpha.0",
+    "@indiekit/syndicator-mastodon": "^1.0.0-alpha.0",
+    "@indiekit/syndicator-twitter": "^1.0.0-alpha.0"
   }
 }
