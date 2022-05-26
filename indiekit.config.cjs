@@ -1,5 +1,6 @@
 module.exports = {
   application: {
+    url: "https://kit.paulrobertlloyd.com",
     mongodbUrl: process.env.MONGO_URL,
   },
   plugins: [
