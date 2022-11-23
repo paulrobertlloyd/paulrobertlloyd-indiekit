@@ -13,7 +13,7 @@ module.exports = {
     categories: "https://paulrobertlloyd.com/categories/index.json",
     locale: "en-GB",
     me: "https://paulrobertlloyd.com",
-    postTypes:  [{
+    postTypes: [{
       type: "article",
       name: "Article",
       post: {
