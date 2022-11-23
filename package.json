@@ -24,9 +24,9 @@
     "start": "indiekit serve"
   },
   "dependencies": {
-    "@indiekit/indiekit": "^1.0.0-alpha.11",
-    "@indiekit/store-github": "^1.0.0-alpha.10",
-    "@indiekit/syndicator-mastodon": "^1.0.0-alpha.10",
-    "@indiekit/syndicator-twitter": "^1.0.0-alpha.10"
+    "@indiekit/indiekit": "^1.0.0-alpha.15",
+    "@indiekit/store-github": "^1.0.0-alpha.13",
+    "@indiekit/syndicator-mastodon": "^1.0.0-alpha.13",
+    "@indiekit/syndicator-twitter": "^1.0.0-alpha.13"
   }
 }
