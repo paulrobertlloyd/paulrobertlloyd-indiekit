@@ -4,8 +4,10 @@ module.exports = {
     mongodbUrl: process.env.MONGO_URL,
   },
   plugins: [
+    "@indiekit/endpoint-json-feed",
     "@indiekit/preset-jekyll",
     "@indiekit/store-github",
+    "@indiekit/syndicator-internet-archive",
     "@indiekit/syndicator-mastodon",
     "@indiekit/syndicator-twitter",
   ],
@@ -63,6 +65,10 @@ module.exports = {
   "@indiekit/store-github": {
     user: "paulrobertlloyd",
     repo: "paulrobertlloyd-v4"
+  },
+  "@indiekit/syndicator-internet-archive": {
+    checked: true,
+    forced: true,
   },
   "@indiekit/syndicator-mastodon": {
     checked: true,
