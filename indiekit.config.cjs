@@ -67,8 +67,7 @@ module.exports = {
     repo: "paulrobertlloyd-v4"
   },
   "@indiekit/syndicator-internet-archive": {
-    checked: true,
-    forced: true,
+    checked: false,
   },
   "@indiekit/syndicator-mastodon": {
     checked: true,
