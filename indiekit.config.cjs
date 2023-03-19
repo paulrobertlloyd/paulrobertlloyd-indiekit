@@ -18,44 +18,44 @@ module.exports = {
       type: "article",
       name: "Article",
       post: {
-        path: "src/articles/{yyyy}/{MM}/{slug}/index.md",
-        url: "{yyyy}/{MM}/{slug}/"
+        path: "articles/{yyyy}-{MM}-{dd}-{slug}.markdown",
+        url: "{yyyy}/{DDD}/a{n}/{slug}/"
       },
       media: {
-        path: "src/articles/{yyyy}/{MM}/{slug}/{filename}",
-        url: "{yyyy}/{MM}/{slug}/{filename}"
+        path: "media/{yyyy}/{DDD}/a{n}/{filename}",
+        url: "{yyyy}/{DDD}/a{n}/{filename}"
       }
     }, {
       type: "note",
       name: "Note",
       post: {
-        path: "src/notes/{t}.md",
-        url: "notes/{t}/"
+        path: "notes/{yyyy}-{MM}-{dd}-{n}.markdown",
+        url: "{yyyy}/{DDD}/n{n}/"
       }
     }, {
       type: "photo",
       name: "Photo",
       post: {
-        path: "src/photos/{t}.md",
-        url: "photos/{t}/"
+        path: "photos/{yyyy}-{MM}-{dd}-{n}.markdown",
+        url: "{yyyy}/{DDD}/p{n}/"
       },
       media: {
-        path: "src/media/{t}.{ext}",
-        url: "media/{t}.{ext}"
+        path: "media/{yyyy}/{DDD}/p{n}/{filename}",
+        url: "{yyyy}/{DDD}/p{n}/{filename}"
       }
     }, {
       type: "bookmark",
       name: "Bookmark",
       post: {
-        path: "src/bookmarks/{yyyy}-{MM}-{dd}-{slug}.md",
-        url: "bookmarks/{yyyy}/{MM}/{slug}/"
+        path: "bookmarks/{yyyy}-{MM}-{dd}-{slug}.markdown",
+        url: "{yyyy}/{DDD}/b{n}/{slug}/"
       }
     }, {
       type: "reply",
       name: "Reply",
       post: {
-        path: "src/replies/{t}.md",
-        url: "replies/{t}/"
+        path: "replies/{yyyy}-{MM}-{dd}-{n}.markdown",
+        url: "{yyyy}/{DDD}/r{n}/"
       }
     }],
     slugSeparator: "_",
@@ -63,7 +63,7 @@ module.exports = {
   },
   "@indiekit/store-github": {
     user: "paulrobertlloyd",
-    repo: "paulrobertlloyd-v4"
+    repo: "paulrobertlloyd-content"
   },
   "@indiekit/syndicator-mastodon": {
     checked: true,
