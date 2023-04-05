@@ -7,8 +7,8 @@ module.exports = {
     "@indiekit/endpoint-json-feed",
     "@indiekit/preset-jekyll",
     "@indiekit/store-github",
-    "@indiekit/syndicator-mastodon",
-    "@indiekit/syndicator-twitter",
+    // "@indiekit/syndicator-mastodon",
+    // "@indiekit/syndicator-twitter",
   ],
   publication: {
     categories: "https://paulrobertlloyd.com/categories/index.json",
@@ -65,15 +65,15 @@ module.exports = {
     user: "paulrobertlloyd",
     repo: "paulrobertlloyd-content"
   },
-  "@indiekit/syndicator-mastodon": {
-    checked: true,
-    forced: true,
-    url: "https://mastodon.social",
-    user: "paulrobertlloyd",
-  },
-  "@indiekit/syndicator-twitter": {
-    checked: true,
-    forced: true,
-    user: "paulrobertlloyd",
-  },
+  // "@indiekit/syndicator-mastodon": {
+  //   checked: true,
+  //   forced: true,
+  //   url: "https://mastodon.social",
+  //   user: "paulrobertlloyd",
+  // },
+  // "@indiekit/syndicator-twitter": {
+  //   checked: true,
+  //   forced: true,
+  //   user: "paulrobertlloyd",
+  // },
 };
