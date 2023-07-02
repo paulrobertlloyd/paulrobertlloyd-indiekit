@@ -7,7 +7,7 @@ export default {
     "@indiekit/endpoint-json-feed",
     "@indiekit/preset-jekyll",
     "@indiekit/store-github",
-    // "@indiekit/syndicator-mastodon",
+    "@indiekit/syndicator-mastodon",
   ],
   publication: {
     categories: "https://paulrobertlloyd.com/categories/index.json",
@@ -64,10 +64,10 @@ export default {
     user: "paulrobertlloyd",
     repo: "paulrobertlloyd-content"
   },
-  // "@indiekit/syndicator-mastodon": {
-  //   checked: true,
-  //   forced: true,
-  //   url: "https://mastodon.social",
-  //   user: "paulrobertlloyd",
-  // },
+  "@indiekit/syndicator-mastodon": {
+    checked: true,
+    forced: false,
+    url: "https://mastodon.social",
+    user: "paulrobertlloyd",
+  },
 };
