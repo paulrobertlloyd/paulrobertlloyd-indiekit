@@ -1,7 +1,8 @@
 export default {
   application: {
-    url: "https://kit.paulrobertlloyd.com",
     mongodbUrl: process.env.MONGO_URL,
+    timeZone: "Europe/London",
+    url: "https://kit.paulrobertlloyd.com",
   },
   plugins: [
     "@indiekit/endpoint-json-feed",
@@ -58,7 +59,6 @@ export default {
       }
     }],
     slugSeparator: "_",
-    timeZone: "Europe/London",
   },
   "@indiekit/store-github": {
     user: "paulrobertlloyd",
