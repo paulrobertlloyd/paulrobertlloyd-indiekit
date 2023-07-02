@@ -8,7 +8,6 @@ module.exports = {
     "@indiekit/preset-jekyll",
     "@indiekit/store-github",
     // "@indiekit/syndicator-mastodon",
-    // "@indiekit/syndicator-twitter",
   ],
   publication: {
     categories: "https://paulrobertlloyd.com/categories/index.json",
@@ -69,11 +68,6 @@ module.exports = {
   //   checked: true,
   //   forced: true,
   //   url: "https://mastodon.social",
-  //   user: "paulrobertlloyd",
-  // },
-  // "@indiekit/syndicator-twitter": {
-  //   checked: true,
-  //   forced: true,
   //   user: "paulrobertlloyd",
   // },
 };
