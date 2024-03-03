@@ -15,10 +15,8 @@ export default {
     categories: "https://paulrobertlloyd.com/categories/index.json",
     locale: "en-GB",
     me: "https://paulrobertlloyd.com",
-    postTypes: [
-      {
-        type: "article",
-        name: "Article",
+    postTypes: {
+      article: {
         post: {
           path: "articles/{yyyy}-{MM}-{dd}-{slug}.markdown",
           url: "{yyyy}/{DDD}/a{n}/{slug}/",
@@ -28,17 +26,13 @@ export default {
           url: "{yyyy}/{DDD}/a{n}/{filename}",
         },
       },
-      {
-        type: "note",
-        name: "Note",
+      note: {
         post: {
           path: "notes/{yyyy}-{MM}-{dd}-{n}.markdown",
           url: "{yyyy}/{DDD}/n{n}/",
         },
       },
-      {
-        type: "photo",
-        name: "Photo",
+      photo: {
         post: {
           path: "photos/{yyyy}-{MM}-{dd}-{n}.markdown",
           url: "{yyyy}/{DDD}/p{n}/",
@@ -48,23 +42,19 @@ export default {
           url: "{yyyy}/{DDD}/p{n}/{filename}",
         },
       },
-      {
-        type: "bookmark",
-        name: "Bookmark",
+      bookmark: {
         post: {
           path: "bookmarks/{yyyy}-{MM}-{dd}-{slug}.markdown",
           url: "{yyyy}/{DDD}/b{n}/{slug}/",
         },
       },
-      {
-        type: "reply",
-        name: "Reply",
+      reply: {
         post: {
           path: "replies/{yyyy}-{MM}-{dd}-{n}.markdown",
           url: "{yyyy}/{DDD}/r{n}/",
         },
       },
-    ],
+    },
     slugSeparator: "_",
   },
   "@indiekit/store-github": {
