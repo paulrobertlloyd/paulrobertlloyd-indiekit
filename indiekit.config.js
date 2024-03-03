@@ -6,6 +6,7 @@ export default {
   },
   plugins: [
     "@indiekit/endpoint-json-feed",
+    "@indiekit/post-type-jam",
     "@indiekit/preset-jekyll",
     "@indiekit/store-github",
     "@indiekit/syndicator-internet-archive",
@@ -24,6 +25,12 @@ export default {
         media: {
           path: "media/{yyyy}/{DDD}/a{n}/{filename}",
           url: "{yyyy}/{DDD}/a{n}/{filename}",
+        },
+      },
+      jam: {
+        post: {
+          path: "jams/{yyyy}-{MM}-{dd}-{n}.markdown",
+          url: "{yyyy}/{DDD}/j{n}/",
         },
       },
       note: {
