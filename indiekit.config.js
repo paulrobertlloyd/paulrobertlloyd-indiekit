@@ -64,6 +64,14 @@ export default {
     },
     slugSeparator: "_",
   },
+  "@indiekit/endpoint-media": {
+    imageProcessing: {
+      resize: {
+        width: 2400,
+        height: 2400,
+      },
+    },
+  },
   "@indiekit/store-github": {
     user: "paulrobertlloyd",
     repo: "paulrobertlloyd-content",
