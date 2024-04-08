@@ -1,5 +1,6 @@
 export default {
   application: {
+    locale: "en-GB",
     mongodbUrl: process.env.MONGO_URL,
     timeZone: "Europe/London",
     url: "https://kit.paulrobertlloyd.com",
