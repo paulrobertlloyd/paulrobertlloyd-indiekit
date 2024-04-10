@@ -1,0 +1,11 @@
+{{ tagInput({
+  name: "tags",
+  value: fieldData("tags").value,
+  label: "Tags",
+  hint: "Separate each tag with a comma",
+  optional: not field.required,
+  localisation: {
+    tag: "tag",
+    tags: "tags"
+  }
+}) }}

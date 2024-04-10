@@ -17,6 +17,7 @@ export default {
     "@indiekit/store-github",
     "@indiekit/syndicator-internet-archive",
     "@indiekit/syndicator-mastodon",
+    "@paulrobertlloyd/tags-input",
   ],
   publication: {
     categories: "https://paulrobertlloyd.com/categories/index.json",
@@ -81,6 +82,18 @@ export default {
   "@indiekit/store-github": {
     user: "paulrobertlloyd",
     repo: "paulrobertlloyd-content",
+  },
+  "@indiekit/post-type-photo": {
+    fields: {
+      photo: { required: true },
+      content: {},
+      tags: {},
+      category: {},
+      "post-status": {},
+      "mp-photo-alt": { required: true },
+      published: { required: true },
+      visibility: {},
+    },
   },
   "@indiekit/syndicator-mastodon": {
     checked: true,
