@@ -25,7 +25,7 @@ export default {
         },
         media: {
           path: "media/{yyyy}/{DDD}/a{n}/{filename}",
-          url: "{yyyy}/{DDD}/a{n}/{filename}",
+          url: "media/{yyyy}/{DDD}/a{n}/{filename}",
         },
       },
       jam: {
@@ -47,7 +47,7 @@ export default {
         },
         media: {
           path: "media/{yyyy}/{DDD}/p{n}/{filename}",
-          url: "{yyyy}/{DDD}/p{n}/{filename}",
+          url: "media/{yyyy}/{DDD}/p{n}/{filename}",
         },
       },
       bookmark: {
