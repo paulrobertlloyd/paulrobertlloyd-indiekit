@@ -83,6 +83,19 @@ export default {
     user: "paulrobertlloyd",
     repo: "paulrobertlloyd-content",
   },
+  "@indiekit/post-type-article": {
+    fields: {
+      name: { required: true },
+      content: { required: true },
+      summary: {},
+      tags: {},
+      category: {},
+      location: {},
+      "post-status": {},
+      published: { required: true },
+      visibility: {},
+    },
+  },
   "@indiekit/post-type-photo": {
     fields: {
       photo: { required: true },
