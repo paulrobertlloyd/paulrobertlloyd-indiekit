@@ -32,6 +32,7 @@
     "@indiekit/store-github": "^1.0.0-beta.4",
     "@indiekit/syndicator-internet-archive": "^1.0.0-beta.4",
     "@indiekit/syndicator-mastodon": "^1.0.0-beta.4",
+    "@paulrobertlloyd/accent-color-input": "file:accent-color-input",
     "@paulrobertlloyd/tags-input": "file:tags-input"
   },
   "devDependencies": {

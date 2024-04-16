@@ -1,0 +1,7 @@
+{
+  "name": "@paulrobertlloyd/accent-color-input",
+  "main": "index.js",
+  "type": "module",
+  "private": true,
+  "license": "MIT"
+}

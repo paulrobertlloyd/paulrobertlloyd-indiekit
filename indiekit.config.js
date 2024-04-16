@@ -17,6 +17,7 @@ export default {
     "@indiekit/store-github",
     "@indiekit/syndicator-internet-archive",
     "@indiekit/syndicator-mastodon",
+    "@paulrobertlloyd/accent-color-input",
     "@paulrobertlloyd/tags-input",
   ],
   publication: {
@@ -91,6 +92,7 @@ export default {
       tags: {},
       category: {},
       location: {},
+      "accent-color": {},
       "post-status": {},
       published: { required: true },
       visibility: {},
