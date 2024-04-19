@@ -7,7 +7,7 @@ export default {
   application: {
     locale: "en-GB",
     mongodbUrl: process.env.MONGO_URL,
-    timeZone: "Europe/London",
+    timeZone: process.env.TZ,
     url: "https://kit.paulrobertlloyd.com",
   },
   plugins: [
