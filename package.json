@@ -26,12 +26,12 @@
   },
   "dependencies": {
     "@indiekit/endpoint-json-feed": "^1.0.0-beta.4",
-    "@indiekit/frontend": "^1.0.0-beta.14",
-    "@indiekit/indiekit": "^1.0.0-beta.4",
-    "@indiekit/post-type-jam": "^1.0.0-beta.8",
-    "@indiekit/store-github": "^1.0.0-beta.4",
-    "@indiekit/syndicator-internet-archive": "^1.0.0-beta.4",
-    "@indiekit/syndicator-mastodon": "^1.0.0-beta.4",
+    "@indiekit/frontend": "^1.0.0-beta.15",
+    "@indiekit/indiekit": "^1.0.0-beta.15",
+    "@indiekit/post-type-jam": "^1.0.0-beta.15",
+    "@indiekit/store-github": "^1.0.0-beta.15",
+    "@indiekit/syndicator-internet-archive": "^1.0.0-beta.15",
+    "@indiekit/syndicator-mastodon": "^1.0.0-beta.15",
     "@paulrobertlloyd/accent-color-input": "file:accent-color-input",
     "@paulrobertlloyd/tags-input": "file:tags-input"
   },
