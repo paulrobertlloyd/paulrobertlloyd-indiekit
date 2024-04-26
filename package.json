@@ -22,7 +22,8 @@
   "type": "module",
   "main": "index.config.js",
   "scripts": {
-    "start": "indiekit serve"
+    "start": "indiekit serve",
+    "dev": "node --env-file=.env --run start"
   },
   "dependencies": {
     "@indiekit/endpoint-json-feed": "^1.0.0-beta.4",
@@ -34,8 +35,5 @@
     "@indiekit/syndicator-mastodon": "^1.0.0-beta.15",
     "@paulrobertlloyd/accent-color-input": "file:accent-color-input",
     "@paulrobertlloyd/tags-input": "file:tags-input"
-  },
-  "devDependencies": {
-    "dotenv": "^16.4.5"
   }
 }
