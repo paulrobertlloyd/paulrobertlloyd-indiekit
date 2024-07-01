@@ -18,7 +18,6 @@ export default {
     "@paulrobertlloyd/tags-input",
   ],
   publication: {
-    categories: "https://paulrobertlloyd.com/categories/index.json",
     locale: "en-GB",
     me: "https://paulrobertlloyd.com",
     postTypes: {
