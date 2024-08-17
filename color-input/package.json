@@ -1,5 +1,5 @@
 {
-  "name": "@paulrobertlloyd/accent-color-input",
+  "name": "@paulrobertlloyd/color-input",
   "main": "index.js",
   "type": "module",
   "private": true,

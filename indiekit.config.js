@@ -10,11 +10,11 @@ export default {
   plugins: [
     "@indiekit/endpoint-json-feed",
     "@indiekit/post-type-jam",
-    "@indiekit/preset-jekyll",
+    "@indiekit/preset-eleventy",
     "@indiekit/store-github",
     "@indiekit/syndicator-internet-archive",
     "@indiekit/syndicator-mastodon",
-    "@paulrobertlloyd/accent-color-input",
+    "@paulrobertlloyd/color-input",
     "@paulrobertlloyd/tags-input",
   ],
   publication: {
@@ -88,7 +88,7 @@ export default {
       category: {},
       tags: {},
       location: {},
-      "accent-color": {},
+      color: {},
       "post-status": {},
       published: { required: true },
       visibility: {},
