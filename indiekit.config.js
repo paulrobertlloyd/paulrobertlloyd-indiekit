@@ -9,6 +9,7 @@ export default {
   },
   plugins: [
     "@indiekit/endpoint-json-feed",
+    "@indiekit/endpoint-webmention-io",
     "@indiekit/post-type-jam",
     "@indiekit/preset-eleventy",
     "@indiekit/store-github",
