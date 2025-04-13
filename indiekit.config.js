@@ -13,6 +13,7 @@ export default {
     "@indiekit/post-type-jam",
     "@indiekit/preset-eleventy",
     "@indiekit/store-github",
+    "@indiekit/syndicator-bluesky",
     "@indiekit/syndicator-internet-archive",
     "@indiekit/syndicator-mastodon",
     "@paulrobertlloyd/color-input",
@@ -106,6 +107,10 @@ export default {
       published: { required: true },
       visibility: {},
     },
+  },
+  "@indiekit/syndicator-bluesky": {
+    checked: true,
+    handle: "paulrobertlloyd.com",
   },
   "@indiekit/syndicator-mastodon": {
     checked: true,
