@@ -33,7 +33,7 @@
     "@indiekit/post-type-jam": "^1.0.0-beta.20",
     "@indiekit/preset-eleventy": "^1.0.0-beta.20",
     "@indiekit/store-github": "^1.0.0-beta.20",
-    "@indiekit/syndicator-bluesky": "^1.0.0-beta.21",
+    "@indiekit/syndicator-bluesky": "^1.0.0-beta.22",
     "@indiekit/syndicator-internet-archive": "^1.0.0-beta.20",
     "@indiekit/syndicator-mastodon": "^1.0.0-beta.20",
     "@paulrobertlloyd/color-input": "file:color-input",
