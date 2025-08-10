@@ -17,7 +17,7 @@
   },
   "homepage": "https://indiekit.paulrobertlloyd.com",
   "engines": {
-    "node": "^22"
+    "node": "^24"
   },
   "type": "module",
   "main": "index.config.js",
