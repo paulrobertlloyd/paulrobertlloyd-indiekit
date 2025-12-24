@@ -26,16 +26,16 @@
     "dev": "node --env-file=.env --run start"
   },
   "dependencies": {
-    "@indiekit/endpoint-json-feed": "^1.0.0-beta.20",
-    "@indiekit/endpoint-webmention-io": "^1.0.0-beta.20",
-    "@indiekit/frontend": "^1.0.0-beta.20",
-    "@indiekit/indiekit": "^1.0.0-beta.20",
-    "@indiekit/post-type-jam": "^1.0.0-beta.20",
-    "@indiekit/preset-eleventy": "^1.0.0-beta.20",
-    "@indiekit/store-github": "^1.0.0-beta.20",
-    "@indiekit/syndicator-bluesky": "^1.0.0-beta.22",
-    "@indiekit/syndicator-internet-archive": "^1.0.0-beta.20",
-    "@indiekit/syndicator-mastodon": "^1.0.0-beta.20",
+    "@indiekit/endpoint-json-feed": "^1.0.0-beta.25",
+    "@indiekit/endpoint-webmention-io": "^1.0.0-beta.25",
+    "@indiekit/frontend": "^1.0.0-beta.25",
+    "@indiekit/indiekit": "^1.0.0-beta.25",
+    "@indiekit/post-type-jam": "^1.0.0-beta.25",
+    "@indiekit/preset-eleventy": "^1.0.0-beta.25",
+    "@indiekit/store-github": "^1.0.0-beta.25",
+    "@indiekit/syndicator-bluesky": "^1.0.0-beta.25",
+    "@indiekit/syndicator-internet-archive": "^1.0.0-beta.25",
+    "@indiekit/syndicator-mastodon": "^1.0.0-beta.25",
     "@paulrobertlloyd/color-input": "file:color-input",
     "@paulrobertlloyd/tags-input": "file:tags-input"
   }
