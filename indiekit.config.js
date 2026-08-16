@@ -111,9 +111,11 @@ export default {
   "@indiekit/syndicator-bluesky": {
     checked: true,
     handle: "paulrobertlloyd.com",
+    includeCategories: true,
   },
   "@indiekit/syndicator-mastodon": {
     checked: true,
+    includeCategories: true,
     url: "https://mastodon.social",
     user: "paulrobertlloyd",
   },
