@@ -22,8 +22,7 @@
   "type": "module",
   "main": "indiekit.config.js",
   "scripts": {
-    "start": "indiekit serve",
-    "dev": "node --env-file=.env --run start"
+    "start": "indiekit serve"
   },
   "dependencies": {
     "@indiekit/endpoint-json-feed": "^1.0.0-beta.28",

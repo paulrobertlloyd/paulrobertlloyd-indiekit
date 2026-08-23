@@ -1,6 +1,11 @@
+import { existsSync } from "node:fs";
 import process from "node:process";
 
-export default {
+if (existsSync(".env")) {
+  process.loadEnvFile();
+}
+
+const config = {
   application: {
     locale: "en-GB",
     mongodbUrl: process.env.MONGO_URL,
@@ -120,3 +125,5 @@ export default {
     user: "paulrobertlloyd",
   },
 };
+
+export default config;
