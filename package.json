@@ -20,7 +20,7 @@
     "node": "^24"
   },
   "type": "module",
-  "main": "index.config.js",
+  "main": "indiekit.config.js",
   "scripts": {
     "start": "indiekit serve",
     "dev": "node --env-file=.env --run start"
