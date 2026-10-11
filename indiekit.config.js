@@ -14,6 +14,7 @@ const config = {
   },
   plugins: [
     "@indiekit/endpoint-json-feed",
+    "@indiekit/endpoint-microsub",
     "@indiekit/endpoint-webmention-io",
     "@indiekit/post-type-jam",
     "@indiekit/preset-eleventy",
